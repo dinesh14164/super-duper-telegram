@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
           localStorage.setItem('token', data.jwt);
           localStorage.setItem('role', data.role);
           setTimeout(() => {
-            this.route.navigate(['/auth/profile']);
+            this.route.navigate(['']);
           }, 2000);
         }
       },
